@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
      <Header />
-     <AlbumList  toggle={toggle}/>
+     <AlbumList  toggle={toggle}/>                   
      <AddAlbum setToggle={setToggle} toggle={toggle}/>
-    
+                                            {/* switch ^ */}
     import {  } from "module";
     </div>
   );

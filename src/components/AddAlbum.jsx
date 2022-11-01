@@ -1,18 +1,18 @@
 import { useState } from "react"
 
 
-export default function AddAlbum({setToggle, toggle}) { 
-    const [album, setAlbum] = useState('')
+export default function AddAlbum({setToggle, toggle}) { //switch 
+    const [albums, setAlbum] = useState('')
     const [years, setYears] = useState('')
-    const [artist, setArtist] = useState('')
+    const [artists, setArtist] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (!album || !artist || !years ) {
+        if (!albums || !artists || !years ) {
             alert('please enter all items & info')
             return
         }
-        const newAlbum = {artist, album, years}
+        const newAlbum = {artists, albums, years}
         fetch ('https://albums-api-cjh.web.app/albums', {
             method: 'POST',
             headers: {
@@ -34,19 +34,22 @@ export default function AddAlbum({setToggle, toggle}) {
             <h3>Add New Album</h3>
             <form onSubmit={handleSubmit}>
                <label html='albums' className="label">Albums:
-               <input type="text" name="albums" onChange={ e => setAlbum(e.target.value)}
-                value={album}  className="label-in" required/>
+               <input type="text" name="albums" required
+                onChange={ e => setAlbum(e.target.value)}
+                value={albums}  className="label-in" />
                </label>
                <br/>
                <label html='albums'  className="label">Artists:
-               <input type="text" name="albums" onChange={ e => setArtist(e.target.value)}
-                value={artist}  className="label-in" required/>
+               <input type="text" name="albums" required
+               onChange={ e => setArtist(e.target.value)}
+                value={artists}  className="label-in" />
                </label>
               
                <br/>
                <label html='years'  className="label">Years:
-               <input type="number" name="years" onChange={ e => setYears(e.target.value)}
-                value={years}  className="label-in" required/>
+               <input type="number" name="years"required
+                onChange={ e => setYears(e.target.value)}
+                value={years}  className="label-in" />
                <br/>
 
                </label>
