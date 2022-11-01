@@ -1,24 +1,38 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
 .App {
+  border: solid 1em rgb(241, 179, 73);
+  border-radius: 12rem;
+  background-color: rgb(187, 247, 238);
   text-align: center;
 }
 
 header {
-
-  border: 2px solid red;
+  background-color: rgb(164, 213, 241);
+  border: 1em solid rgb(177, 212, 213);
   margin: calc(1em + 1vw);
   border-radius: 25%;
-  padding: 1rem;
+  border-style: ridge;
   
 }
 
 .album-list {
-  border:  2px solid gold;
+  border:  2em solid rgb(76, 89, 90);
   margin: calc(1em + 1vw);
   border-radius: 7%;
   
 }
 
 .album{
+  color: rgb(83, 49, 1);
+  background-color: rgb(209, 147, 95);
   border: 2px solid gray;
   margin: 1em;
   border-radius: 5%;
@@ -26,9 +40,9 @@ header {
 }
 .add-album{
   
-  border: 2px solid rgb(8, 240, 240);
+  border: 4.5px solid rgb(2, 81, 81);
   margin: 1em;
-  border-radius: 5%;
+  border-radius: 50%;
 }
 /* .label{
 border: solid 6px black;
