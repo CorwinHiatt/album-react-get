@@ -3,20 +3,34 @@
 }
 
 header {
+
   border: 2px solid red;
   margin: calc(1em + 1vw);
- 
+  border-radius: 25%;
+  padding: 1rem;
   
 }
 
 .album-list {
   border:  2px solid gold;
   margin: calc(1em + 1vw);
+  border-radius: 7%;
   
 }
 
 .album{
-
   border: 2px solid gray;
   margin: 1em;
+  border-radius: 5%;
+  
+}
+.add-album{
+  
+  border: 2px solid rgb(8, 240, 240);
+  margin: 1em;
+  border-radius: 5%;
+}
+.label{
+border: solid 6px black;
+  padding: 40px 40px 40px 40px;
 }
