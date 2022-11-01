@@ -12,8 +12,8 @@ function App() {
      <Header />
      <AlbumList  toggle={toggle}/>                   
      <AddAlbum setToggle={setToggle} toggle={toggle}/>
-                                            {/* switch ^ */}
-    import {  } from "module";
+                                           
+   
     </div>
   );
 }

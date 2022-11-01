@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-export default function AddAlbum({setToggle, toggle}) { //switch 
+export default function AddAlbum({toggle, setToggle }) { //switch 
     const [albums, setAlbum] = useState('')
     const [years, setYears] = useState('')
     const [artists, setArtist] = useState('')
@@ -33,23 +33,23 @@ export default function AddAlbum({setToggle, toggle}) { //switch
         <section className="add-album">
             <h3>Add New Album</h3>
             <form onSubmit={handleSubmit}>
-               <label html='albums' className="label">Albums:
+               <label html='albums' >Albums:
                <input type="text" name="albums" required
                 onChange={ e => setAlbum(e.target.value)}
-                value={albums}  className="label-in" />
+                value={albums}  />
                </label>
                <br/>
-               <label html='albums'  className="label">Artists:
+               <label html='albums'  >Artists:
                <input type="text" name="albums" required
                onChange={ e => setArtist(e.target.value)}
-                value={artists}  className="label-in" />
+                value={artists}   />
                </label>
               
                <br/>
-               <label html='years'  className="label">Years:
+               <label html='years'  >Years:
                <input type="number" name="years"required
                 onChange={ e => setYears(e.target.value)}
-                value={years}  className="label-in" />
+                value={years}   />
                <br/>
 
                </label>
